@@ -130,7 +130,7 @@ nav ul li:last-child {
 .content {
   margin-top: 30px;
   font-size: 4rem;
-  min-height: 80vh;
+  min-height: 78vh;
 }
 
 @media only screen and (max-width: 767px) {

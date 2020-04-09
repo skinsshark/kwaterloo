@@ -36,16 +36,26 @@ window.addEventListener("scroll", () => {
 let contents = data;
 
 function renderContent() {
-  contents.map((val, i) => {
+  const shuffledContents = shuffleData(contents)
+  shuffledContents.map((val, i) => {
     contentContainer.innerHTML += `<p>${val.name}</p>`
   });
+}
+
+function shuffleData(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+
+  return arr;
 }
 
 function onFilterChange(e) {
   if (e.target.type != 'radio') {
     const selId = e.target.id;
 
-    if (selId.length > 0) {
+    if (selId.length > 0 && selId != curr) {
       contentContainer.innerHTML = '';
       curr = selId;
 
@@ -54,9 +64,9 @@ function onFilterChange(e) {
       } else {
         contents = data
       }
-    }
 
-    renderContent();
+      renderContent();
+    }
   }
 }
 
