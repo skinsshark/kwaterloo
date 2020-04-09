@@ -67,6 +67,11 @@ function onFilterChange(e) {
 
       renderContent();
     }
+
+    window.scroll({
+      top: NAV_THRESHOLD,
+      behavior: 'smooth'
+    });
   }
 }
 
