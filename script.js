@@ -2,6 +2,9 @@ const nav = document.getElementById('nav');
 const NAV_THRESHOLD = 484;
 const bg = document.getElementById('bg');
 
+// sections
+let curr = 'all'; // :-(
+
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   if (scrollY >= NAV_THRESHOLD) {
@@ -27,3 +30,10 @@ window.addEventListener("scroll", () => {
     }
   }
 }, {passive: true});
+
+function onFilterChange(e) {
+  const selId = e.target.innerText.slice(0,3).toLowerCase();
+  if (selId.length > 0) {
+    curr = selId;
+  }
+}
