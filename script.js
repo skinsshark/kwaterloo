@@ -2,6 +2,8 @@ const nav = document.getElementById('nav');
 const NAV_THRESHOLD = 484;
 const bg = document.getElementById('bg');
 
+const contentContainer = document.querySelector('.content');
+
 // sections
 let curr = 'all'; // :-(
 
@@ -23,7 +25,7 @@ window.addEventListener("scroll", () => {
 
     if (scrollY >= NAV_THRESHOLD) {
       nav.style.background = `
-        radial-gradient(${rX}vw ${rY}vh at 50vw 50vh, #41E8DE 0%, #FFB72D 100%)
+        radial-gradient(${rX}vw ${rY}vh at 46vw 50vh, #41E8DE 0%, #FFB72D 100%)
       `;
     } else {
       nav.style.background = 'transparent';
@@ -31,10 +33,32 @@ window.addEventListener("scroll", () => {
   }
 }, {passive: true});
 
-function onFilterChange(e) {
-  const selId = e.target.id;
+let contents = data;
 
-  if (selId.length > 0) {
-    curr = selId;
+function renderContent() {
+  contents.map((val, i) => {
+    contentContainer.innerHTML += `<p>${val.name}</p>`
+  });
+}
+
+function onFilterChange(e) {
+  if (e.target.type != 'radio') {
+    const selId = e.target.id;
+
+    if (selId.length > 0) {
+      contentContainer.innerHTML = '';
+      curr = selId;
+
+      if (selId != 'all') {
+        contents = data.filter(val => val.filters.has(selId))
+      } else {
+        contents = data
+      }
+    }
+
+    renderContent();
   }
 }
+
+// start
+renderContent();
