@@ -32,7 +32,8 @@ window.addEventListener("scroll", () => {
 }, {passive: true});
 
 function onFilterChange(e) {
-  const selId = e.target.innerText.slice(0,3).toLowerCase();
+  const selId = e.target.id;
+
   if (selId.length > 0) {
     curr = selId;
   }
