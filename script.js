@@ -1,3 +1,5 @@
+const observer = lozad();
+
 const nav = document.getElementById('nav');
 const NAV_THRESHOLD = 484;
 const bg = document.getElementById('bg');
@@ -52,18 +54,24 @@ let contents = data;
 
 function renderContent() {
   const shuffledContents = shuffleData(contents);
-  shuffledContents.map((val, i) => {    
+  
+  shuffledContents.map((val, i) => {
     contentContainer.innerHTML += `
       <div class="list-item">
         <p>${val.name}</p>
         <div class="gallery">
-          ${val.files.length > 0 ? `<img src="./assets/${val.files[0]}.png" />` : ''}
-          ${val.files.length > 1 ? `<img src="./assets/${val.files[1]}.png" />` : ''}
-          ${val.files.length > 2 ? `<img src="./assets/${val.files[2]}.png" />` : ''}
+          ${val.files.length > 0 ?
+            `<img class="lozad" data-src="./assets/${val.files[0]}.png" />` : ''}
+          ${val.files.length > 1 ?
+            `<img class="lozad" data-src="./assets/${val.files[1]}.png" />` : ''}
+          ${val.files.length > 2 ?
+            `<img class="lozad" data-src="./assets/${val.files[2]}.png" />` : ''}
         </div>
       </div>
     `;
   });
+
+  observer.observe();
 }
 
 const secretContentContainer = document.getElementById('secret');
