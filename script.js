@@ -1,6 +1,5 @@
 const nav = document.getElementById('nav');
 const NAV_THRESHOLD = 484;
-const SMOOTHNESS = 1;
 const bg = document.getElementById('bg');
 
 const contentContainer = document.querySelector('.content');
@@ -8,67 +7,29 @@ const contentContainer = document.querySelector('.content');
 // sections
 let curr = 'all'; // :-(
 
-// rand vars
-let rX = Math.ceil(Math.random()*60);
-let rY = Math.ceil(Math.random()*43);
-
-let cX = rX/2;
-let cY = rY/2;
-
-let dX = 1;
-let dY = 1;
-
-bg.style.background = `
-  radial-gradient(${cX}% ${cY}% at 50% 50%, #41E8DE 0%, #FFB72D 100%)
-`;
-nav.style.background = `
-  radial-gradient(${cX}vw ${cY}vh at 46vw 50vh, #41E8DE 0%, #FFB72D 100%)
-`;
-
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   if (scrollY >= NAV_THRESHOLD) {
-    nav.classList.add('stop');
+    nav.classList.add('stop')
   } else {
-    nav.classList.remove('stop');
+    nav.classList.remove('stop')
   }
 
   if (scrollY % 20 > 15) {
+    const rX = Math.ceil(Math.random()*60);
+    const rY = Math.ceil(Math.random()*43);
+
     bg.style.background = `
-      radial-gradient(${cX}% ${cY}% at 50% 50%, #41E8DE 0%, #FFB72D 100%)
+      radial-gradient(${rX}% ${rY}% at 50% 50%, #41E8DE 0%, #FFB72D 100%)
     `;
 
     if (scrollY >= NAV_THRESHOLD) {
       nav.style.background = `
-        radial-gradient(${cX}vw ${cY}vh at 46vw 50vh, #41E8DE 0%, #FFB72D 100%)
+        radial-gradient(${rX}vw ${rY}vh at 46vw 50vh, #41E8DE 0%, #FFB72D 100%)
       `;
     } else {
       nav.style.background = 'transparent';
     }
-
-    // horizontally
-    if ((dX > 0 && cX >= rX) || (dX < 0 && cX < rX)) {
-      rX = Math.ceil(Math.random()*60);
-      if (cX >= rX) {
-        dX = -1;
-      } else {
-        dX = 1;
-      }
-
-    }
-    cX += dX * SMOOTHNESS;
-
-    // vertically
-    if ((dY > 0 && cY >= rY) || (dY < 0 && cY < rY)) {
-      rY = Math.ceil(Math.random()*43);
-      if (cY >= rY) {
-        dY = -1;
-      } else {
-        dY = 1;
-      }
-
-    }
-    cY += dY * SMOOTHNESS;
   }
 }, {passive: true});
 
