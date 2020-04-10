@@ -86,3 +86,16 @@ function onFilterChange(e) {
 // start
 renderContent();
 renderSecret(shuffleData(data));
+
+let gravity = 0;
+const body = document.querySelector('body');
+
+function switchMenu() {
+  if (gravity === 1) {
+    gravity = 0;
+    body.classList.add('secret');
+  } else {
+    gravity = 1;
+    body.classList.remove('secret');
+  }
+}

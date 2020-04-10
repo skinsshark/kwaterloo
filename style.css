@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.99) !important;
+}
+
+::selection {
+  background-color: rgba(255, 255, 255, 0.99) !important;
+}
+
 #bg {
   height: 100vh;
   width: 100vw;
@@ -47,6 +55,7 @@ header {
 @media only screen and (max-width: 767px) {
   html {
     padding: 15px;
+    margin-bottom: 50px;
   }
 
   body {
@@ -91,6 +100,7 @@ nav {
     position: -webkit-sticky;
     top: 0;
     padding: 30px 0;
+    z-index: 9999;
   }
 
   nav.stop {
@@ -142,6 +152,33 @@ nav ul li:last-child {
 
 p {
   margin: 2rem 0;
+  cursor: e-resize;
+}
+
+body.secret .content p {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+body.secret .content p:hover {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+  ms-filter: none;
+  filter: none;
+}
+
+.menu::after {
+  content: '下';
+}
+
+body.secret .menu::after {
+  content: '上';
 }
 
 .content {
