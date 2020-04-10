@@ -2,7 +2,7 @@ const data = [
   {
     "name": "Show & Tell Coffee",
     "filters": new Set(["food", "top"]),
-    "files": ["0showandtell", "1showandtell", "2showandtell"]
+    "files": ["2showandtell", "4showandtell", "0showandtell"]
   },
   {
     "name": "Zero Waste Bulk",
@@ -17,12 +17,12 @@ const data = [
   {
     "name": "The Yeti Cafe",
     "filters": new Set(["food", "top"]),
-    "files": ["0yeti"]
+    "files": ["0yeti", "3yeti", "2yeti"]
   },
   {
     "name": "Matter of Taste Coffee Bar",
     "filters": new Set(["food"]),
-    "files": ["0mot"]
+    "files": ["0mot", "1mot"]
   },
   // {
   //   "name": "Hacienda Coffee",
@@ -32,12 +32,12 @@ const data = [
   {
     "name": "Special Delivery",
     "filters": new Set(["food"]),
-    "files": ["0special"]
+    "files": ["0special", "1special", "2special"]
   },
   {
     "name": "Smile Tiger Coffee Roasters",
     "filters": new Set(["food"]),
-    "files": ["0smiletiger"]
+    "files": ["0smiletiger", "1smiletiger", "2smiletiger"]
   },
   {
     "name": "Settlement Coffee Roasters",
@@ -57,7 +57,7 @@ const data = [
   {
     "name": "brch social",
     "filters": new Set(["food"]),
-    "files": ["0brch"]
+    "files": ["0brch", "1brch"]
   },
   {
     "name": "The Break Room",
@@ -72,7 +72,7 @@ const data = [
   {
     "name": "Kitchener Public Library",
     "filters": new Set(["fun"]),
-    "files": ["0kpl"],
+    "files": ["missing"],
   },
   {
     "name": "AMF Frederick",
@@ -82,7 +82,7 @@ const data = [
   {
     "name": "Victoria Park",
     "filters": new Set(["fun"]),
-    "files": ["0vicpark"]
+    "files": ["0vicpark", "1vicpark", "2vicpark"]
   },
   {
     "name": "Waterloo Park",
@@ -97,7 +97,7 @@ const data = [
   {
     "name": "KEN Sushi House",
     "filters": new Set(["food"]),
-    "files": ["0ken"]
+    "files": ["0ken", "2ken"]
   },
   {
     "name": "O’My Bakery",
@@ -107,12 +107,12 @@ const data = [
   {
     "name": "Yummy Chongqing",
     "filters": new Set(["food", "top"]),
-    "files": ["0yummy"]
+    "files": ["0yummy", "1yummy"]
   },
   {
     "name": "Scoop Du Jour",
     "filters": new Set(["food"]),
-    "files": ["0scoop", "1scoop", "2scoop"]
+    "files": ["0scoop", "7scoop", "2scoop"]
   },
   {
     "name": "Bauer Kitchen",
@@ -132,7 +132,7 @@ const data = [
   {
     "name": "Kim’s Kitchen",
     "filters": new Set(["food", "top"]),
-    "files": ["0kims", "1kims", "2kims"]
+    "files": ["4kims", "1kims", "0kims"]
   },
   {
     "name": "Lancaster Smokehouse",
@@ -142,7 +142,7 @@ const data = [
   {
     "name": "Pho Dau Bo",
     "filters": new Set(["food", "top"]),
-    "files": ["0phodaubo", "1phodaubo"]
+    "files": ["0phodaubo", "1phodaubo", "2phodaubo"]
   },
   {
     "name": "goodvibes juice co.",
@@ -157,7 +157,7 @@ const data = [
   {
     "name": "Kinkaku Izakaya",
     "filters": new Set(["food", "top"]),
-    "files": ["0kinkaku"]
+    "files": ["0kinkaku", "1kinkaku", "2kinkaku"]
   },
   {
     "name": "Chef On Call",
@@ -172,7 +172,7 @@ const data = [
   {
     "name": "Watami Sushi",
     "filters": new Set(["food", "top"]),
-    "files": ["0watami", "1watami", "2watami"]
+    "files": ["0watami", "1watami", "3watami"]
   },
   {
     "name": "My-Thai Restaurant",
@@ -187,7 +187,7 @@ const data = [
   {
     "name": "Jane Bond",
     "filters": new Set(["food", "top"]),
-    "files": ["0janebond", "1janebond", "2janebond"]
+    "files": ["0janebond", "2janebond"]
   },
   {
     "name": "Pho Ben Thanh Restaurant",
@@ -197,7 +197,7 @@ const data = [
   {
     "name": "Better Chef",
     "filters": new Set(["food"]),
-    "files": ["0betterchef"]
+    "files": ["0betterchef", "1betterchef"]
   },
   {
     "name": "Cameron Chinese",
@@ -207,12 +207,12 @@ const data = [
   {
     "name": "Mel’s Diner",
     "filters": new Set(["food"]),
-    "files": ["0mels"]
+    "files": ["0mels", "1mels"]
   },
   {
     "name": "McDonald’s",
     "filters": new Set(["food"]),
-    "files": ["0mcds", "1mcds", "2mcds"]
+    "files": ["0mcds", "1mcds", "4mcds"]
   },
   {
     "name": "A Second Look Books And Movies",
@@ -242,7 +242,7 @@ const data = [
   {
     "name": "Bob's valu-mart",
     "filters": new Set(["shop"]),
-    "files": ["0bobsvalu", "1bobsvalu","2bobsvalu"]
+    "files": ["1bobsvalu","2bobsvalu"]
   },
   {
     "name": "Legacy Greens",
@@ -264,4 +264,34 @@ const data = [
     "filters": new Set(["shop", "food"]),
     "files": ["missing"]
   },
+  {
+    "name": "Snackhut",
+    "filters": new Set(["shop", "top"]),
+    "files": ["0snackhut", "1snackhut", "2snackhut"]
+  },
+  {
+    "name": "Waterloo Central Supermarket",
+    "filters": new Set(["shop"]),
+    "files": ["0centralsupermarket"]
+  },
+  {
+    "name": "Eby Farmstead",
+    "filters": new Set(["fun"]),
+    "files": ["0eby", "1eby", "2eby"]
+  },
+  {
+    "name": "Gustav Bakos Observatory",
+    "filters": new Set(["fun"]),
+    "files": ["0observatory"]
+  },
+  {
+    "name": "Cafe Pyrus",
+    "filters": new Set(["food", "top"]),
+    "files": ["0pyrus", "1pyrus", "2pyrus"]
+  },
+  {
+    "name": "THEMUSEUM",
+    "filters": new Set(["fun"]),
+    "files": ["0museum", "2museum", "3museum"]
+  }
 ]
