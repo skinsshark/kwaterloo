@@ -52,14 +52,14 @@ let contents = data;
 
 function renderContent() {
   const shuffledContents = shuffleData(contents);
-  shuffledContents.map((val, i) => {
+  shuffledContents.map((val, i) => {    
     contentContainer.innerHTML += `
       <div class="list-item">
         <p>${val.name}</p>
         <div class="gallery">
-          ${val.files.length > 0 ? `<img src="./assets/${val.files[0]}" />` : ''}
-          ${val.files.length > 1 ? `<img src="./assets/${val.files[1]}" />` : ''}
-          ${val.files.length > 2 ? `<img src="./assets/${val.files[2]}" />` : ''}
+          ${val.files.length > 0 ? `<img src="./assets/${val.files[0]}.png" />` : ''}
+          ${val.files.length > 1 ? `<img src="./assets/${val.files[1]}.png" />` : ''}
+          ${val.files.length > 2 ? `<img src="./assets/${val.files[2]}.png" />` : ''}
         </div>
       </div>
     `;
