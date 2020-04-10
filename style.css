@@ -117,11 +117,6 @@ nav {
     padding: 30px 0;
     z-index: 9999;
   }
-
-  nav.stop {
-    background: radial-gradient(60vw 43.9vh at 50vw 50vh, #41E8DE 0%, #FFB72D 100%);
-    background-size: cover;
-  }
 }
 
 nav ul, nav ul li {
