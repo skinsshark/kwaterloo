@@ -1,0 +1,14 @@
+{
+  "description": "2015-2020 kitchener waterloo career",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "./assets/pwa/icon.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    }
+  ],
+  "name": "kitchener-waterloo guide",
+  "short_name": "kw guide",
+  "start_url": "./index.html"
+}
