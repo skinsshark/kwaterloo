@@ -2,72 +2,72 @@ const data = [
   {
     "name": "Show & Tell Coffee",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png", "show-and-tell1.jpg"]
+    "files": []
   },
   {
     "name": "Zero Waste Bulk",
     "filters": new Set(["shop", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Princess Cinemas",
     "filters": new Set(["fun"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "The Yeti Cafe",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Matter of Taste Coffee Bar",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Hacienda Coffee",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Special Delivery",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Smile Tiger Coffee Roasters",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Settlement Coffee Roasters",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Seven Shores",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Exotica Cafe",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "brch social",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "The Break Room",
     "filters": new Set(["fun"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Canadian Clay and Glass Gallery",
     "filters": new Set(["fun"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Kitchener Public Library",
@@ -77,191 +77,191 @@ const data = [
   {
     "name": "AMF Frederick",
     "filters": new Set(["fun"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Victoria Park",
     "filters": new Set(["fun"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Waterloo Park",
     "filters": new Set(["fun"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Queen Street Yoga",
     "filters": new Set(["fun", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "KEN Sushi House",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "O’My Bakery",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Yummy Chongqing",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Scoop Du Jour",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Bauer Kitchen",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Now Tea",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Mimo Thai Kitchen",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Kim’s Kitchen",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Lancaster Smokehouse",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Pho Dau Bo",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "goodvibes juice co.",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Darlise Cafe",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Kinkaku Izakaya",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Chef On Call",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Red House",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Watami Sushi",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "My-Thai Restaurant",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Loloan Lobby Bar",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Jane Bond",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Pho Ben Thanh Restaurant",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Better Chef",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Cameron Chinese",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Mel’s Diner",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "McDonald’s",
     "filters": new Set(["food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "A Second Look Books And Movies",
     "filters": new Set(["shop"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "St. Jacobs Farmers' Market",
     "filters": new Set(["shop", "food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "T&T Supermarket",
     "filters": new Set(["shop", "food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Michaels",
     "filters": new Set(["shop"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Luster & Oak",
     "filters": new Set(["shop"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Bob's valu-mart",
     "filters": new Set(["shop"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Legacy Greens",
     "filters": new Set(["shop"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "BJ's Photo Labs",
     "filters": new Set(["shop"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Vincenzo's",
     "filters": new Set(["shop", "food", "top"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
   {
     "name": "Kitchener Market",
     "filters": new Set(["shop", "food"]),
-    "files": ["show-and-tell.png"]
+    "files": []
   },
 ]
