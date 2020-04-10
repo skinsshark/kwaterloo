@@ -19,38 +19,40 @@
     <title>KITCHENER—WATERLOO</title>
   </head>
   <body>
-    <div id="bg"></div>
-    <header>
-      <h1>Kitchener<span>—Waterloo</span></h1>
-    </header>
+    <div id="bg" class="loading"></div>
+    <main class="loading">
+      <header>
+        <h1>Kitchener<span>—Waterloo</span></h1>
+      </header>
 
-    <nav id="nav">
-      <div class="sections">
-        <label id="all" onClick="onFilterChange(event)">All
-          <input type="radio" checked="checked" name="navigation">
-          <span class="checkmark"></span>
-        </label>
-        <label id="top" onClick="onFilterChange(event)">Top
-          <input type="radio" name="navigation">
-          <span class="checkmark"></span>
-        </label>
-        <label id="food" onClick="onFilterChange(event)">Food & Drink
-          <input type="radio" name="navigation">
-          <span class="checkmark"></span>
-        </label>
-        <label id="fun" onClick="onFilterChange(event)">Fun
-          <input type="radio" name="navigation">
-          <span class="checkmark"></span>
-        </label>
-        <label id="shop" onClick="onFilterChange(event)">Shop
-          <input type="radio" name="navigation">
-          <span class="checkmark"></span>
-        </label>
-      </div>
-    </nav>
-    <div class="content"></div>
-    <div class="content" id="secret"></div>
-    <div class="menu" onClick="switchMenu()"></div>
+      <nav id="nav">
+        <div class="sections">
+          <label id="all" onClick="onFilterChange(event)">All
+            <input type="radio" checked="checked" name="navigation">
+            <span class="checkmark"></span>
+          </label>
+          <label id="top" onClick="onFilterChange(event)">Top
+            <input type="radio" name="navigation">
+            <span class="checkmark"></span>
+          </label>
+          <label id="food" onClick="onFilterChange(event)">Food & Drink
+            <input type="radio" name="navigation">
+            <span class="checkmark"></span>
+          </label>
+          <label id="fun" onClick="onFilterChange(event)">Fun
+            <input type="radio" name="navigation">
+            <span class="checkmark"></span>
+          </label>
+          <label id="shop" onClick="onFilterChange(event)">Shop
+            <input type="radio" name="navigation">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </nav>
+      <div class="content"></div>
+      <div class="content" id="secret"></div>
+      <div class="menu" onClick="switchMenu()"></div>
+    </main>
   </body>
   <script type="text/javascript" src="./data.js"></script>
   <script type="text/javascript" src="./script.js"></script>

@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #FFB72D;
+}
+
+.loading {
+  opacity: 0;
+}
+
 ::-moz-selection {
   background-color: rgba(255, 255, 255, 0.99) !important;
 }
@@ -19,11 +27,18 @@
   z-index: -999999999;
   pointer-events: none;
   background: radial-gradient(60% 43.9% at 50% 50%, #41E8DE 0%, #FFB72D 100%);
+  transition: 1s opacity linear;
+  transition-delay: 1s;
 }
 
 html {
   padding: 50px;
   scroll-behavior: smooth;
+}
+
+main {
+  transition: 1s opacity linear;
+  transition-delay: 1s;
 }
 
 body, h1, h2, h3, p {

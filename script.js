@@ -3,6 +3,8 @@ const NAV_THRESHOLD = 484;
 const bg = document.getElementById('bg');
 
 const contentContainer = document.querySelector('.content');
+const body = document.querySelector('body');
+const main = document.querySelector('main');
 
 // sections
 let curr = 'all'; // :-(
@@ -10,13 +12,25 @@ let curr = 'all'; // :-(
 let rX = Math.ceil(Math.random()*60);
 let rY = Math.ceil(Math.random()*43);
 
-window.addEventListener("scroll", () => {
+window.addEventListener("load", () => {
+  bg.classList.remove('loading');
+  setTimeout(() => main.classList.remove('loading'), 1000);
+})
 
+window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   if (scrollY >= NAV_THRESHOLD) {
     nav.classList.add('stop')
   } else {
     nav.classList.remove('stop')
+  }
+
+  if (scrollY >= NAV_THRESHOLD) {
+    nav.style.background = `
+      radial-gradient(${rX}vw ${rY}vh at 46vw 50vh, #41E8DE 0%, #FFB72D 100%)
+    `;
+  } else {
+    nav.style.background = 'transparent';
   }
 
   if (scrollY % 200 > 190) {
@@ -25,14 +39,6 @@ window.addEventListener("scroll", () => {
     bg.style.background = `
       radial-gradient(${rX}% ${rY}% at 50% 50%, #41E8DE 0%, #FFB72D 100%)
     `;
-
-    if (scrollY >= NAV_THRESHOLD) {
-      nav.style.background = `
-        radial-gradient(${rX}vw ${rY}vh at 46vw 50vh, #41E8DE 0%, #FFB72D 100%)
-      `;
-    } else {
-      nav.style.background = 'transparent';
-    }
   }
 }, {passive: true});
 
@@ -91,7 +97,6 @@ renderContent();
 renderSecret(shuffleData(data));
 
 let gravity = 0;
-const body = document.querySelector('body');
 
 function switchMenu() {
   if (gravity === 1) {
