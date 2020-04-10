@@ -1,7 +1,8 @@
 const observer = lozad();
 
 const nav = document.getElementById('nav');
-const NAV_THRESHOLD = 484;
+const header = document.querySelector('header');
+let NAV_THRESHOLD = header.offsetHeight + 52; // padding-top: 50 + buffer: 2
 const bg = document.getElementById('bg');
 
 const contentContainer = document.querySelector('.content');
@@ -54,7 +55,7 @@ let contents = data;
 
 function renderContent() {
   const shuffledContents = shuffleData(contents);
-  
+
   shuffledContents.map((val, i) => {
     contentContainer.innerHTML += `
       <div class="list-item">
@@ -92,6 +93,8 @@ function shuffleData(arr) {
 }
 
 function onFilterChange(e) {
+  NAV_THRESHOLD = header.offsetHeight + 52;
+  console.log(NAV_THRESHOLD)
   if (e.target.type != 'radio') {
     const selId = e.target.id;
 
