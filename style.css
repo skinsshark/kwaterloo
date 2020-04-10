@@ -130,7 +130,6 @@ nav ul li {
 }
 
 @media only screen and (max-width: 767px) {
-  /* update for hamburger maybe */
   nav {
     font-size: 1rem;
   }
@@ -160,12 +159,49 @@ nav ul li:last-child {
   }
 }
 
-p {
+.list-item {
   margin: 2rem 0;
   cursor: e-resize;
+  display: flex;
+  justify-content: space-between;
 }
 
-body.secret .content p {
+@media only screen and (max-width: 767px) {
+  .content p {
+    margin: 3rem 0;
+  }
+}
+
+p:hover img {
+  /* display: inline; */
+  opacity: 1;
+  transition: 0.1s opacity linear;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+}
+
+.gallery img {
+  width: auto;
+  height: 3.5rem;
+  /* opacity: 0; */
+  transition: 0.1s opacity linear;
+  margin: 0 1rem;
+  cursor: zoom-in;
+}
+
+.gallery img:last-child {
+  margin-right: 0;
+}
+
+.gallery img:first-child {
+  margin-left: 3rem;
+}
+
+body.secret .content > p,
+body.secret .content .list-item {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
@@ -174,7 +210,8 @@ body.secret .content p {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
-body.secret .content p:hover {
+body.secret .content > p:hover,
+body.secret .content .list-item:hover {
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
   -o-transform: rotate(0);
