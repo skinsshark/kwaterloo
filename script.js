@@ -19,20 +19,20 @@ window.addEventListener("scroll", () => {
     nav.classList.remove('stop')
   }
 
-  if (scrollY >= NAV_THRESHOLD || scrollY % 200 > 190) {
-    nav.style.background = `
-      radial-gradient(${rX}vw ${rY}vh at 46vw 50vh, #41E8DE 0%, #FFB72D 100%)
-    `;
-  } else {
-    nav.style.background = 'transparent';
-  }
-
   if (scrollY % 200 > 190) {
     rX = Math.ceil(Math.random()*60);
     rY = Math.ceil(Math.random()*43);
     bg.style.background = `
       radial-gradient(${rX}% ${rY}% at 50% 50%, #41E8DE 0%, #FFB72D 100%)
     `;
+
+    if (scrollY >= NAV_THRESHOLD) {
+      nav.style.background = `
+        radial-gradient(${rX}vw ${rY}vh at 46vw 50vh, #41E8DE 0%, #FFB72D 100%)
+      `;
+    } else {
+      nav.style.background = 'transparent';
+    }
   }
 }, {passive: true});
 
