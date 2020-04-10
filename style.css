@@ -189,7 +189,7 @@ p:hover img {
   /* opacity: 0; */
   transition: 0.1s opacity linear;
   margin: 0 1rem;
-  cursor: zoom-in;
+  cursor: not-allowed;
 }
 
 .gallery img:last-child {

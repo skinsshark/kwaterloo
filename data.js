@@ -2,7 +2,7 @@ const data = [
   {
     "name": "Show & Tell Coffee",
     "filters": new Set(["food", "top"]),
-    "files": ["show-and-tell.png", "show-and-tell1.png"]
+    "files": ["show-and-tell.png", "show-and-tell1.jpg"]
   },
   {
     "name": "Zero Waste Bulk",
