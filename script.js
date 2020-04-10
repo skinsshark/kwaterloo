@@ -36,9 +36,17 @@ window.addEventListener("scroll", () => {
 let contents = data;
 
 function renderContent() {
-  const shuffledContents = shuffleData(contents)
+  const shuffledContents = shuffleData(contents);
   shuffledContents.map((val, i) => {
     contentContainer.innerHTML += `<p>${val.name}</p>`
+  });
+}
+
+const secretContentContainer = document.getElementById('secret');
+
+function renderSecret(arr) {
+  arr.map((val, i) => {
+    secretContentContainer.innerHTML += `<p>${val.name}</p>`
   });
 }
 
@@ -77,3 +85,4 @@ function onFilterChange(e) {
 
 // start
 renderContent();
+renderSecret(shuffleData(data));

@@ -143,3 +143,21 @@ nav ul li:last-child {
 p {
   margin: 2rem 0;
 }
+
+.content {
+  display: block !important;
+}
+
+#secret.content {
+  display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .content {
+    display: none !important;
+  }
+
+  #secret.content {
+    display: block !important;
+  }
+}
