@@ -1,2 +1,2 @@
-# Template
-Quick start webpages
+# Kitchener Waterloo Guide
+
