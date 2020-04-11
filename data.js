@@ -114,11 +114,11 @@ const data = [
     "filters": new Set(["food"]),
     "files": ["0scoop", "7scoop", "2scoop"]
   },
-  {
-    "name": "Bauer Kitchen",
-    "filters": new Set(["food"]),
-    "files": ["missing"]
-  },
+  // {
+  //   "name": "Bauer Kitchen",
+  //   "filters": new Set(["food"]),
+  //   "files": ["missing"]
+  // },
   {
     "name": "Now Tea",
     "filters": new Set(["food"]),
