@@ -70,7 +70,7 @@ header {
 @media only screen and (max-width: 767px) {
   html {
     padding: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   body {
@@ -243,5 +243,9 @@ body.secret .menu::after {
 
   #secret.content {
     display: block !important;
+  }
+
+  #secret.content p {
+    margin: 1.5rem;
   }
 }
