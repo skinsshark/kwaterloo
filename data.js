@@ -72,7 +72,7 @@ const data = [
   {
     "name": "Kitchener Public Library",
     "filters": new Set(["fun"]),
-    "files": ["missing"],
+    "files": ["0kpl", "1kpl"],
   },
   {
     "name": "AMF Frederick",
@@ -177,7 +177,7 @@ const data = [
   {
     "name": "My-Thai Restaurant",
     "filters": new Set(["food"]),
-    "files": ["missing"]
+    "files": ["0mythai", "1mythai"]
   },
   {
     "name": "Loloan Lobby Bar",
@@ -237,7 +237,7 @@ const data = [
   {
     "name": "Luster & Oak",
     "filters": new Set(["shop"]),
-    "files": ["missing"]
+    "files": ["0luster", "1luster"]
   },
   {
     "name": "Bob's valu-mart",
@@ -262,7 +262,7 @@ const data = [
   {
     "name": "Kitchener Market",
     "filters": new Set(["shop", "food"]),
-    "files": ["missing"]
+    "files": ["0kitchenermarket"]
   },
   {
     "name": "Snackhut",
