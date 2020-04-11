@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75770644-19"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-  
+
       gtag('config', 'UA-75770644-19');
     </script>
 
@@ -42,11 +42,11 @@
 
       <nav id="nav">
         <div class="sections">
-          <label id="all" onClick="onFilterChange(event)">All
+          <label class="general" id="all" onClick="onFilterChange(event)">All
             <input type="radio" checked="checked" name="navigation">
             <span class="checkmark"></span>
           </label>
-          <label id="top" onClick="onFilterChange(event)">Top
+          <label class="general" id="top" onClick="onFilterChange(event)">Top
             <input type="radio" name="navigation">
             <span class="checkmark"></span>
           </label>
@@ -54,18 +54,21 @@
             <input type="radio" name="navigation">
             <span class="checkmark"></span>
           </label>
+          <section class="content" id="secret-food"></section>
           <label id="fun" onClick="onFilterChange(event)">Fun
             <input type="radio" name="navigation">
             <span class="checkmark"></span>
           </label>
+          <section class="content" id="secret-fun"></section>
           <label id="shop" onClick="onFilterChange(event)">Shop
             <input type="radio" name="navigation">
             <span class="checkmark"></span>
           </label>
+          <section class="content" id="secret-shop"></section>
         </div>
       </nav>
       <div class="content"></div>
-      <div class="content" id="secret"></div>
+      <!-- <div class="content" id="secret"></div> -->
       <div class="menu" onClick="switchMenu()"></div>
     </main>
   </body>

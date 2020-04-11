@@ -5,7 +5,7 @@ const header = document.querySelector('header');
 let NAV_THRESHOLD = header.offsetHeight + 52; // padding-top: 50 + buffer: 2
 const bg = document.getElementById('bg');
 
-const contentContainer = document.querySelector('.content');
+const contentContainer = document.querySelector('div.content');
 const body = document.querySelector('body');
 const main = document.querySelector('main');
 
@@ -75,11 +75,35 @@ function renderContent() {
   observer.observe();
 }
 
-const secretContentContainer = document.getElementById('secret');
+const secretFoodContainer = document.getElementById('secret-food');
+const secretFunContainer = document.getElementById('secret-fun');
+const secretShopContainer = document.getElementById('secret-shop');
 
-function renderSecret(arr) {
-  arr.map((val, i) => {
-    secretContentContainer.innerHTML += `<p>${val.name}</p>`
+function renderSecret() {
+  const foods = new Set();
+  const funs = new Set();
+  const shops = new Set();
+
+  for (let val of contents) {
+    if (val.filters.has('food')) {
+      foods.add(val.name);
+    } else if (val.filters.has('fun')) {
+      funs.add(val.name);
+    } else {
+      shops.add(val.name);
+    }
+  }
+
+  Array.from(foods).map((val, i) => {
+    secretFoodContainer.innerHTML += `<p>${val}</p>`
+  });
+
+  Array.from(funs).map((val, i) => {
+    secretFunContainer.innerHTML += `<p>${val}</p>`
+  });
+
+  Array.from(shops).map((val, i) => {
+    secretShopContainer.innerHTML += `<p>${val}</p>`
   });
 }
 
@@ -120,7 +144,7 @@ function onFilterChange(e) {
 
 // start
 renderContent();
-renderSecret(shuffleData(data));
+renderSecret();
 
 let gravity = 0;
 

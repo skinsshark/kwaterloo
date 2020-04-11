@@ -10,8 +10,15 @@ label {
 }
 
 @media only screen and (max-width: 767px) {
-  label {
+  label.general {
     display: none;
+  }
+
+  .sections > label {
+    margin: 0;
+    pointer-events: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fff;
   }
 }
 
@@ -48,4 +55,10 @@ label .checkmark:after {
 	width: 100%;
 	height: 3px;
 	background: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  label .checkmark:after {
+    background: transparent !important;
+  }
 }

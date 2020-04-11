@@ -130,6 +130,7 @@ nav ul li {
 @media only screen and (max-width: 767px) {
   nav {
     font-size: 1rem;
+    background: transparent !important;
   }
 
   nav ul li {
@@ -154,6 +155,8 @@ nav ul li:last-child {
 @media only screen and (max-width: 767px) {
   .content {
     font-size: 2.5rem;
+    min-height: 0;
+    margin-bottom: 100px;
   }
 }
 
@@ -165,7 +168,7 @@ nav ul li:last-child {
 }
 
 @media only screen and (max-width: 767px) {
-  .content p {
+  div.content p {
     margin: 3rem 0;
   }
 }
@@ -198,8 +201,8 @@ p:hover img {
   margin-left: 3rem;
 }
 
-body.secret .content > p,
-body.secret .content .list-item {
+body.secret section.content > p,
+body.secret div.content .list-item {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
@@ -208,7 +211,7 @@ body.secret .content .list-item {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
-body.secret .content > p:hover,
+body.secret section.content > p:hover,
 body.secret .content .list-item:hover {
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -226,24 +229,24 @@ body.secret .menu::after {
   content: '上';
 }
 
-.content {
+div.content {
   display: block !important;
 }
 
-#secret.content {
+section.content {
   display: none !important;
 }
 
 @media only screen and (max-width: 767px) {
-  .content {
+  div.content {
     display: none !important;
   }
 
-  #secret.content {
+  section.content {
     display: block !important;
   }
 
-  #secret.content p {
+  section.content p {
     margin: 1.5rem;
   }
 }
